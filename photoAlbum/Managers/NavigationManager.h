@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "User.h"
-#import "UserAlbum.h"
+
+@class User;
+@class UserAlbum;
 
 @interface NavigationManager : NSObject
 

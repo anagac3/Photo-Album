@@ -7,8 +7,14 @@
 //
 
 #import "PhotoAlbumViewController.h"
+
 #import "PhotoAlbumCollectionViewController.h"
 #import "NavigationManager.h"
+
+#import "PhotoAlbumViewModelProtocol.h"
+
+#import "UserAlbum.h"
+#import "Photo.h"
 
 @interface PhotoAlbumViewController ()
 
@@ -41,6 +47,7 @@
     
     [self.viewModel getPhotosForAlbumId:self.userAlbum.albumId];
     [self setupCollectionView];
+
 }
 
 - (void) setupCollectionView {

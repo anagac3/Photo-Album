@@ -8,22 +8,22 @@
 
 #import "User.h"
 
-const NSString *IDKEY = @"id";
-const NSString *NAMEKEY = @"name";
-const NSString *USERNAMEKEY = @"username";
-const NSString *EMAILKEY = @"email";
-const NSString *PHONEKEY = @"phone";
-const NSString *WEBSITEKEY = @"website";
+static const NSString *kIdKey = @"id";
+static const NSString *kNameKey = @"name";
+static const NSString *kUsernameKey = @"username";
+static const NSString *kEmailKey = @"email";
+static const NSString *kPhoneKey = @"phone";
+static const NSString *kWebsiteKey = @"website";
 
 @implementation User
 
 - (void) parseDictionary: (NSDictionary *) dictionary {
     
-    _userId =  ([dictionary objectForKey:IDKEY]) ? [[dictionary objectForKey:IDKEY] integerValue] : 0;
-    _name = ([dictionary objectForKey:NAMEKEY]) ? [dictionary objectForKey:NAMEKEY] : @"";
-    _username = ([dictionary objectForKey:USERNAMEKEY]) ? [dictionary objectForKey:USERNAMEKEY] : @"";
-    _email = ([dictionary objectForKey:EMAILKEY]) ? [dictionary objectForKey:EMAILKEY] : @"";
-    _phone = ([dictionary objectForKey:PHONEKEY]) ? [dictionary objectForKey:PHONEKEY] : @"";
-    _website = ([dictionary objectForKey:WEBSITEKEY]) ? [dictionary objectForKey:WEBSITEKEY] : @"";
+    _userId =  ([dictionary objectForKey:kIdKey]) ? [[dictionary objectForKey:kIdKey] integerValue] : 0;
+    _name = ([dictionary objectForKey:kNameKey]) ? [dictionary objectForKey:kNameKey] : @"";
+    _username = ([dictionary objectForKey:kUsernameKey]) ? [dictionary objectForKey:kUsernameKey] : @"";
+    _email = ([dictionary objectForKey:kEmailKey]) ? [dictionary objectForKey:kEmailKey] : @"";
+    _phone = ([dictionary objectForKey:kPhoneKey]) ? [dictionary objectForKey:kPhoneKey] : @"";
+    _website = ([dictionary objectForKey:kWebsiteKey]) ? [dictionary objectForKey:kWebsiteKey] : @"";
 }
 @end

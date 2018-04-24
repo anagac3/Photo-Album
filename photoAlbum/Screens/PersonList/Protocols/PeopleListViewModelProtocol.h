@@ -6,8 +6,8 @@
 //  Copyright © 2018 Andres Aguilar. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import "PeopleListViewControllerProtocol.h"
+
+@protocol PeopleListViewControllerProtocol;
 
 @protocol PeopleListViewModelProtocol
 

@@ -7,9 +7,15 @@
 //
 
 #import "UserInfoViewController.h"
+
+#import "User.h"
+#import "UserAlbum.h"
+
 #import "UserInfoTableViewController.h"
-#import <AFNetworking/UIImageView+AFNetworking.h>
 #import "NavigationManager.h"
+
+#import "UserInfoViewModelProtocol.h"
+#import <AFNetworking/UIImageView+AFNetworking.h>
 
 @interface UserInfoViewController ()
 

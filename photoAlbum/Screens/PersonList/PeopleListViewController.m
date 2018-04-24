@@ -8,6 +8,7 @@
 
 #import "PeopleListViewController.h"
 #import "PeopleListTableViewController.h"
+#import "PeopleListViewModelProtocol.h"
 #import "User.h"
 #import "NavigationManager.h"
 

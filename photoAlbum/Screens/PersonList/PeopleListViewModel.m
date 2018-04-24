@@ -7,6 +7,8 @@
 //
 
 #import "PeopleListViewModel.h"
+#import "PeopleListServiceProtocol.h"
+#import "PeopleListViewControllerProtocol.h"
 #import "User.h"
 
 @interface PeopleListViewModel()

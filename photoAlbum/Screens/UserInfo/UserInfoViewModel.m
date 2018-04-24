@@ -8,6 +8,8 @@
 
 #import "UserInfoViewModel.h"
 #import "UserAlbum.h"
+#import "UserInfoServiceProtocol.h"
+#import "UserInfoViewControllerProtocol.h"
 
 @interface UserInfoViewModel()
 

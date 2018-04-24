@@ -6,7 +6,6 @@
 //  Copyright © 2018 Andres Aguilar. All rights reserved.
 //
 
-
 @protocol PeopleListViewControllerProtocol<NSObject>
 
 - (void) viewModelDidGetPeopleList: (NSArray *) peopleList;

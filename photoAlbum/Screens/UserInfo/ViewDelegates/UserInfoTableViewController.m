@@ -7,9 +7,11 @@
 //
 
 #import "UserInfoTableViewController.h"
+#import "UserInfoTableViewDelegate.h"
 #import "UserAlbum.h"
 
-NSString* const USER_ALBUM_CELL_IDENTIFIER = @"UserAlbum";
+static NSString* const kCellIdentifier = @"UserAlbum";
+static NSString* const kHeaderTitle = @"Photo Albums";
 
 @implementation UserInfoTableViewController
 
@@ -20,9 +22,9 @@ NSString* const USER_ALBUM_CELL_IDENTIFIER = @"UserAlbum";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:USER_ALBUM_CELL_IDENTIFIER];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kCellIdentifier];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:USER_ALBUM_CELL_IDENTIFIER];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kCellIdentifier];
     }
     
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
@@ -43,7 +45,7 @@ NSString* const USER_ALBUM_CELL_IDENTIFIER = @"UserAlbum";
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-    return @"Photo Albums";
+    return kHeaderTitle;
 }
 
 @end

@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "UserInfoTableViewDelegate.h"
+
+@protocol UserInfoTableViewDelegate;
 
 @interface UserInfoTableViewController : NSObject<UITableViewDelegate, UITableViewDataSource>
 

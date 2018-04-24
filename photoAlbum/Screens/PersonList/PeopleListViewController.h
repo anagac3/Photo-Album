@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "PeopleListViewModelProtocol.h"
+
 #import "PeopleListViewControllerProtocol.h"
 #import "PeopleListTableViewDelegate.h"
+
+@protocol PeopleListViewModelProtocol;
 
 @interface PeopleListViewController : UIViewController<PeopleListViewControllerProtocol, PeopleListTableViewDelegate>
 

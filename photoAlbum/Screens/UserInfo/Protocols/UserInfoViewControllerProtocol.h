@@ -6,8 +6,6 @@
 //  Copyright © 2018 Andres Aguilar. All rights reserved.
 //
 
-#import "UserInfoViewModelProtocol.h"
-#import "User.h"
 
 @protocol UserInfoViewControllerProtocol<NSObject>
 

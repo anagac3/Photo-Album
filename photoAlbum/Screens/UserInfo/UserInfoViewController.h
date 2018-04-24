@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "UserInfoViewControllerProtocol.h"
-#import "UserInfoViewModelProtocol.h"
 #import "UserInfoTableViewDelegate.h"
+
+@class User;
+@class UserAlbum;
+
+@protocol UserInfoViewModelProtocol;
 
 @interface UserInfoViewController : UIViewController<UserInfoViewControllerProtocol, UserInfoTableViewDelegate>
 

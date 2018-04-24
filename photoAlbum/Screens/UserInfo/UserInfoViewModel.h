@@ -8,8 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import "UserInfoViewModelProtocol.h"
-#import "UserInfoServiceProtocol.h"
-#import "UserInfoViewControllerProtocol.h"
+
+@protocol UserInfoServiceProtocol;
+@protocol UserInfoViewControllerProtocol;
 
 @interface UserInfoViewModel : NSObject<UserInfoViewModelProtocol>
 

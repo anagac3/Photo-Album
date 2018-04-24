@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "PhotoAlbumCollectionViewDelegate.h"
+@protocol PhotoAlbumCollectionViewDelegate;
 
 @interface PhotoAlbumCollectionViewController : NSObject<UICollectionViewDelegate, UICollectionViewDataSource>
 

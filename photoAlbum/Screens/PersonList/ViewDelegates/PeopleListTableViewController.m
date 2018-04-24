@@ -7,9 +7,10 @@
 //
 
 #import "PeopleListTableViewController.h"
+#import "PeopleListTableViewDelegate.h"
 #import "User.h"
 
-NSString* const CELLIDENTIFIER = @"peopleListCell";
+static NSString* const kCellIdentifier = @"peopleListCell";
 
 @implementation PeopleListTableViewController
 
@@ -19,9 +20,9 @@ NSString* const CELLIDENTIFIER = @"peopleListCell";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:CELLIDENTIFIER];
+    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:kCellIdentifier];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CELLIDENTIFIER];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kCellIdentifier];
     }
     
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;

@@ -7,8 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "PeopleListServiceProtocol.h"
 #import "PeopleListViewModelProtocol.h"
+
+@protocol PeopleListServiceProtocol;
+@protocol PeopleListViewControllerProtocol;
 
 @interface PeopleListViewModel : NSObject<PeopleListViewModelProtocol>
 

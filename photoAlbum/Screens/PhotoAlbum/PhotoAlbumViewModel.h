@@ -8,8 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import "PhotoAlbumViewModelProtocol.h"
-#import "PhotoAlbumViewControllerProtocol.h"
-#import "PhotoAlbumServiceProtocol.h"
+
+@protocol PhotoAlbumServiceProtocol;
+@protocol PhotoAlbumViewControllerProtocol;
 
 @interface PhotoAlbumViewModel : NSObject<PhotoAlbumViewModelProtocol>
 

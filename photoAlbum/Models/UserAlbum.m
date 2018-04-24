@@ -8,16 +8,16 @@
 
 #import "UserAlbum.h"
 
-const NSString *ALBUMIDKEY = @"id";
-const NSString *TITLEKEY = @"title";
-const NSString *USERIDKEY = @"userId";
+static const NSString *kIdKey = @"id";
+static const NSString *kTitleKey = @"title";
+static const NSString *kUserIdKey = @"userId";
 
 @implementation UserAlbum
 
 - (void) parseDictionary: (NSDictionary *) dictionary {
-    _userId =  ([dictionary objectForKey:USERIDKEY]) ? [[dictionary objectForKey:USERIDKEY] integerValue] : 0;
-    _title = ([dictionary objectForKey:TITLEKEY]) ? [dictionary objectForKey:TITLEKEY] : @"";
-    _albumId = ([dictionary objectForKey:ALBUMIDKEY]) ? [[dictionary objectForKey:ALBUMIDKEY] integerValue] : 0;
+    _userId =  ([dictionary objectForKey:kUserIdKey]) ? [[dictionary objectForKey:kUserIdKey] integerValue] : 0;
+    _title = ([dictionary objectForKey:kTitleKey]) ? [dictionary objectForKey:kTitleKey] : @"";
+    _albumId = ([dictionary objectForKey:kIdKey]) ? [[dictionary objectForKey:kIdKey] integerValue] : 0;
 }
 
 @end

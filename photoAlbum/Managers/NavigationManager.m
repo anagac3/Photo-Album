@@ -7,6 +7,7 @@
 //
 
 #import "NavigationManager.h"
+
 #import "PeopleListService.h"
 #import "PeopleListViewModel.h"
 #import "PeopleListViewController.h"
@@ -22,6 +23,9 @@
 #import <NYTPhotoViewer/NYTPhotosViewController.h>
 #import <NYTPhotoViewer/NYTPhotoViewerArrayDataSource.h>
 #import "NYTImage.h"
+
+#import "User.h"
+#import "UserAlbum.h"
 
 @interface NavigationManager()
 

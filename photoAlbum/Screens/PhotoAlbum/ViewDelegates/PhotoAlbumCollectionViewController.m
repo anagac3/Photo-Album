@@ -7,11 +7,16 @@
 //
 
 #import "PhotoAlbumCollectionViewController.h"
+
+#import "PhotoAlbumCollectionViewDelegate.h"
+
 #import "PhotoCollectionViewCell.h"
 #import "Photo.h"
+
 #import "UIImageView+AFNetworking.h"
 
-NSString* const PHOTO_CELL_IDENTIFIER = @"PhotoCell";
+static NSString* const kCellIdentifier = @"PhotoCell";
+static NSString* const kNibName = @"PhotoCollectionViewCell";
 
 @interface PhotoAlbumCollectionViewController()
 
@@ -25,7 +30,7 @@ NSString* const PHOTO_CELL_IDENTIFIER = @"PhotoCell";
     self = [super init];
     if (self) {
         //We just need the collection view to register the cell's identifier
-        [collectionView registerNib:[UINib nibWithNibName:@"PhotoCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:PHOTO_CELL_IDENTIFIER];
+        [collectionView registerNib:[UINib nibWithNibName:kNibName bundle:nil] forCellWithReuseIdentifier:kCellIdentifier];
         
         [self calculateCellSize];
     }
@@ -52,7 +57,7 @@ NSString* const PHOTO_CELL_IDENTIFIER = @"PhotoCell";
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    PhotoCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:PHOTO_CELL_IDENTIFIER forIndexPath:indexPath];
+    PhotoCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kCellIdentifier forIndexPath:indexPath];
     [cell setCellWidth:self.cellWidth];
     Photo *photo = self.photoArray[indexPath.row];
     [cell.imageView setImageWithURL:[NSURL URLWithString:photo.url]];

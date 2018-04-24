@@ -8,10 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "PhotoAlbumViewControllerProtocol.h"
-#import "PhotoAlbumViewModelProtocol.h"
 #import "PhotoAlbumCollectionViewDelegate.h"
-#import "UserAlbum.h"
-#import "Photo.h"
+
+@protocol PhotoAlbumViewModelProtocol;
+
+@class Photo;
+@class UserAlbum;
 
 @interface PhotoAlbumViewController : UIViewController<PhotoAlbumViewControllerProtocol, PhotoAlbumCollectionViewDelegate>
 

@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "PeopleListTableViewDelegate.h"
+@protocol PeopleListTableViewDelegate;
 
 @interface PeopleListTableViewController : NSObject<UITableViewDataSource, UITableViewDelegate>
 
 @property (strong, nonatomic) NSArray* peopleArray;
-@property (weak, nonatomic) id<NSObject, PeopleListTableViewDelegate> delegate;
+@property (weak, nonatomic) id<PeopleListTableViewDelegate> delegate;
 
 @end

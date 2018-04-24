@@ -7,6 +7,10 @@
 //
 
 #import "PhotoAlbumViewModel.h"
+
+#import "PhotoAlbumViewControllerProtocol.h"
+#import "PhotoAlbumServiceProtocol.h"
+
 #import "Photo.h"
 
 @interface PhotoAlbumViewModel()

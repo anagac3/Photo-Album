@@ -6,7 +6,7 @@
 //  Copyright © 2018 Andres Aguilar. All rights reserved.
 //
 
-#import "Photo.h"
+@class Photo;
 
 @protocol PhotoAlbumCollectionViewDelegate
 
